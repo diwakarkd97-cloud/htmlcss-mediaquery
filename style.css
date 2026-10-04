@@ -1,0 +1,38 @@
+*{
+    margin:0%;
+    padding:0%
+}
+.container{
+    border: 2px solid black;
+    height: 100vh;
+    background-color: rgb(224, 213, 224);
+    padding: 20px;
+}
+.child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.box1, .box2, .box3{
+    border: 2px solid black;
+    height:200px;
+    width: 460px;
+    ;
+}
+@media(max-width:853px){
+    .child{
+        flex-direction: column;
+    }
+    .box1, .box2, .box3{
+        width: 100%;
+        margin-bottom: 20px;
+        height:125px;
+}
+}
+@media(max-width:495px){
+    .child{
+        height: 340px;
+        font-size: 10px;
+    }
+}
