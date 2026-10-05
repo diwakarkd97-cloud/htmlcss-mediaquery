@@ -6,33 +6,42 @@
     border: 2px solid black;
     height: 100vh;
     background-color: rgb(224, 213, 224);
-    padding: 20px;
+    padding: 10px;
+
 }
 .child{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 20px;
+    gap: 8px;
 }
 .box1, .box2, .box3{
+
     border: 2px solid black;
-    height:200px;
-    width: 460px;
+    height:500px;
+    width: 100vw;
+    font-size: 20px;
     ;
 }
-@media(max-width:853px){
-    .child{
-        flex-direction: column;
-    }
+@media(max-width:1165px){
+    
     .box1, .box2, .box3{
         width: 100%;
         margin-bottom: 20px;
-        height:125px;
+        height:400px;
+        font-size: 20px;
 }
 }
-@media(max-width:495px){
+@media(max-width:881px){
     .child{
-        height: 340px;
+        display: flex;
+        flex-direction: column;
+        height: 400px;
         font-size: 10px;
+    }
+}
+@media(max-width:445px){
+    .box1, .box2, .box3{
+        font-size: 15px;
+        height: 400px;
     }
 }
